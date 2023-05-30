@@ -1,0 +1,567 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0;}
+ol, ul{list-style: none;}
+a{color: black; text-decoration: none;}
+body{
+    min-width: 1400px;
+    font-size: 14px;
+    color: black;
+    line-height: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body::-webkit-scrollbar{
+    width: 12px;
+    height: 8px;
+}
+body::-webkit-scrollbar-track{
+    background-color: rgba(187, 217, 243, 1);
+    border-left: 5px white solid;
+    border-right: 5px white solid;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: rgba(187, 217, 243, 1);
+    border-radius: 20px;
+}
+/* header_wrap */
+#header_wrap{
+    position: relative;
+    height: 1025px;
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden;
+    z-index: 9;
+}
+#header_wrap>img{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -960px;
+}
+#header_wrap>p{
+    position: absolute;
+    font-size: 50px;
+    line-height: 60px;
+    color: white;
+    top: 374px;
+    left: 50%;
+    margin-left: -296px;
+}
+.header{
+    width: 100%;
+    height: 104px;
+    background-color: rgba(255, 255, 255, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.header_scrolled{background-color: rgba(255, 255, 255, 1)}
+.top{
+    margin: 0 auto;
+    width: 1280px;
+    height: 104px;
+}
+.top>h1{
+    float: left;
+    padding-top: 22px;
+}
+.gnb{
+    float: right;
+    padding: 44px 5px 0 0;
+}
+.gnb>li{
+    float: left;
+    font-family: '제주명조';
+}
+.gnb>li>a{
+    display: block;
+    padding: 0 19px 36px 19px;
+}
+.sub_wrap{
+    position: fixed;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    height: 68px;
+    z-index: 9;
+    text-align: center;
+    background-color: rgba(210, 238, 254, 0.5);
+}
+.sub{
+    width: 1280px;
+    margin: 0 auto;
+}
+.sub_inner ul{
+    display: inline-block;
+}
+.sub_inner ul li{
+    float: left;
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+.sub_inner ul li a{
+    display: block;
+    margin: 0 50px;
+}
+.sub_scrolled{
+    background-color: rgba(210, 238, 254, 1);
+}
+/* product_wrap */
+#product_wrap{
+    width: 100%;
+    height: 1082px;
+    overflow: hidden;
+}
+.product{
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 170px 0 260px 0;
+    position: relative;
+}
+.product>a{
+    display: block;
+}
+.left_btn{
+    width: 50px;
+    position: absolute;
+    top: 814px;
+    left: 50%;
+    margin-left: -70px;
+}
+.right_btn{
+    width: 50px;
+    position: absolute;
+    top: 814px;
+    left: 50%;
+    margin-left: 20px;
+}
+.product>p{
+    font-size: 22px;
+    padding-bottom: 75px;
+    font-family: 'SUITE';
+}
+.product ul{
+    position: absolute;
+    top: 269px;
+    left: 50%;
+    margin-left: -640px;
+    width: 2000px;
+    overflow: visible;
+}
+.product ul li{
+    float: left;
+    width: 300px;
+    height: 476px;
+    margin-right: 24px;
+    text-align: right;
+}
+.product ul li:nth-child(2n){
+    width: 400px;
+    height: 310px;
+}
+.product ul li a{
+    width: 100%;
+    display: block;
+}
+.product ul li:nth-child(2n) a{
+    display: block;
+    width: 400px;
+    height: 310px;
+}
+.product ul li p{
+    font-family: 'Noto Serif KR';
+    padding-right: 22px;
+}
+/* brand */
+#brand{
+    width: 100%;
+    height: 892px;
+    margin: 0 auto;
+    font-family: '부크크 명조';
+}
+#brand span{
+    font-size: 20px;
+}
+.brand1{
+    background-color: #D2EDFE;
+}
+.brand2{
+    background-color: rgb(240, 252, 217);
+}
+.brand1, .brand2{
+    width: 100%;
+    height: 446px;
+}
+.brand1_inner, .brand2_inner{
+    width: 1280px;
+    height: 446px;
+    margin: 0 auto;
+}
+.brand1_inner img, .brand2_inner img{
+    width: 432px;
+    height: 446px;
+}
+.brand1_inner p:nth-child(1), .brand2_inner p:nth-child(1){
+    font-size: 30px;
+    padding-bottom: 25px;
+}
+.brand1_inner div, .brand2_inner div{
+    float: left;
+    padding-top: 84px;
+}
+.brand1_inner p:nth-child(2), .brand2_inner p:nth-child(2){
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 32px;
+}
+.brand1_inner img{
+    float: left;
+}
+.brand1_inner div{
+    padding-left: 140px;
+}
+.brand2_inner img{
+    float: right;
+}
+/* event */
+#event{
+    width: 1280px;
+    height: 1061px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 200px 0;
+}
+#event>p{
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+#event ul{
+    display: inline-block;
+    width: 1280px;
+    height: 560px;
+    text-align: center;
+}
+#event ul li{
+    position: relative;
+    width: 426px;
+    height: 560px;
+    float: left;
+}
+#event ul li a{
+    display: block;
+    color: white;
+    font-family: 'Noto Sans KR';
+}
+.event_img{
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.event_text1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: right;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.event_text1 p:nth-child(1){
+    padding: 50px 25px 10px 0;
+    font-size: 16px;
+}
+.event_text1 p:nth-child(2){
+    font-size: 25px;
+    padding-right: 25px;
+}
+.event_text2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+#event ul li:hover .event_text1, #event ul li:hover .event_text2{
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+.event_text2 p{
+    display: inline-block;
+    margin-top: 268px;
+    background-color: #707070;
+    padding: 5px 10px;
+}
+/* news_wrap */
+#news_wrap{
+    height: 989px;
+    background-color: #76C2F2;
+    overflow: hidden;
+}
+.news{
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 150px 0 100px 0;
+    position: relative;
+}
+.news>p{
+    padding: 120px 0 100px 0;
+    font-size: 50px;
+    font-family: 'Noto Serif KR';
+    color: white;
+}
+.view_more{
+    display: inline-block;
+    font-size: 16px;
+    color: white;
+    padding-bottom: 5px;
+    border-bottom: 3px white solid;
+}
+.left_btn2{
+    display: inline-block;
+    margin: 0;
+}
+.left_btn2 img{
+    width: 25px;
+}
+.right_btn2{
+    display: inline-block;
+    margin:  0 50px 0;
+}
+.right_btn2 img{
+    width: 25px;
+}
+.news>div{
+    padding-bottom: 50px;
+}
+.slide{
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    margin-left: -215px;
+    height: 739px;
+    width: 1356px;
+    height: 739px;
+    overflow: visible;
+}
+.slide1{
+    position: relative;
+    display: block;
+    width: 1356px;
+    height: 739px;
+}
+.box1{
+    display: inline-block;
+    width: 605px;
+    height: 739px;
+    background-color: white;
+    margin-right: 142px;
+}
+.box1 a{
+    box-sizing: border-box;
+    padding-top: 23px;
+    display: block;
+    width: 605px;
+    height: 739px;
+}
+.box1 a div{
+    width: 567px;
+    height: 418px;
+    margin: 0px 20px 0 20px;
+    overflow: hidden;
+}
+.box1 p:nth-child(2){
+    font-size: 60px;
+    padding: 50px 0 40px 30px;
+    font-family: '제주명조';
+    color: #A2CBEF;
+}
+.box1 p:nth-child(3){
+    padding-left: 35px;
+    font-size: 20px;
+    font-family: '함초롱바탕';
+    color: #A2CBEF;
+}
+
+.box1 a div img{
+    transform: scale(1);
+    transition: transform 1s;
+}
+.box1 a:hover img{
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+.box2{
+    opacity: 0.6;
+    width: 605px;
+    height: 739px;
+    background-color: white;
+    display: inline-block;
+}
+.box2 a{
+    box-sizing: border-box;
+    padding-top: 23px;
+    display: block;
+    width: 605px;
+    height: 739px;
+}
+.box2 a div{
+    width: 567px;
+    height: 418px;
+    margin: 0px 20px 0 20px;
+    overflow: hidden;
+}
+.box2 p:nth-child(2){
+    font-size: 60px;
+    padding: 50px 0 40px 30px;
+    font-family: '제주명조';
+    color: #A2CBEF;
+}
+.box2 p:nth-child(3){
+    padding-left: 35px;
+    font-size: 20px;
+    font-family: '함초롱바탕';
+    color: #A2CBEF;
+}
+.box2 a div img{
+    transform: scale(1);
+    transition: transform 1s;
+}
+.box2 a:hover img{
+    transform: scale(1.1);
+    transition: transform 1s;
+    .product ul li a img:nth-child(2n){
+        width: 400px;
+        height: 310px;
+    }
+}
+.slide2{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* .news ul{
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    margin-left: -215px;
+    width: 2250px;
+    height: 739px;
+    overflow: visible;
+}
+.news ul li{
+    width: 605px;
+    height: 739px;
+    background-color: white;
+    float: left;
+    margin-right: 142px;
+}
+.news ul li:nth-child(2), .news ul li:nth-child(3){
+    opacity: 0.6;
+}
+.news ul li a{
+    width: 605px;
+    height: 739px;
+    display: block;
+}
+.news ul li a div{
+    width: 567px;
+    height: 418px;
+    margin: 23px 20px 0 20px;
+    overflow: hidden;
+}
+.news ul li a div img{
+    transform: scale(1);
+    transition: transform 1s;
+}
+.news ul li:hover img{
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+.news ul li p:nth-child(2){
+    font-size: 60px;
+    padding: 50px 0 40px 30px;
+    font-family: '제주명조';
+    color: #A2CBEF;
+}
+.news ul li p:nth-child(3){
+    padding-left: 35px;
+    font-size: 20px;
+    font-family: '함초롱바탕';
+    color: #A2CBEF;
+} */
+/* banner */
+#banner{
+    position: relative;
+    height: 446px;
+    overflow: hidden;
+}
+#banner img:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -960px;
+}
+#banner img:nth-child(2){
+    position: absolute;
+    top: 38px;
+    left: 50%;
+    margin-left: -532px;
+}
+#banner img:nth-child(3){
+    position: absolute;
+    top: 38px;
+    left: 50%;
+    margin-left: -387px;
+}
+#banner p{
+    position: absolute;
+    top: 206px;
+    left: 50%;
+    margin-left: 116px;
+    color: white;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: '제주명조';
+}
+/* footer_wrap */
+#footer_wrap{
+    height: 200px;
+    background-color: #74C9FF;
+}
+.footer{
+    width: 1280px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 50px 0 0;
+}
+.footer p{
+    font-size: 12px;
+    color: white;
+    float: left;
+    line-height: 16px;
+    margin-right: 20px;
+}
+.footer span{
+    font-size: 10px;
+}
+.footer ul{
+    float: right;
+}
+.footer ul li{
+    float: left;
+}
+.footer ul li a{
+    display: block;
+    color: white;
+    padding: 0 5px;
+}
