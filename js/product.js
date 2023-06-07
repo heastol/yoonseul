@@ -23,10 +23,10 @@ $('.gnb>li').mouseleave(function(){
 });
 
 $('.view_more').click(function(){
-    $('#product ul').animate({
-        height:'+=445px'
+    $('#product ul').css({
+        "height" : "1780px", "transition" : "all 1s"
     })
-    $('#product').animate({
-        height:'+=445px'
+    $('#product').css({
+        "height" : "2295px", "transition:" : "all 1s"
     })
 })
