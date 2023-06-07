@@ -367,7 +367,7 @@ input::-webkit-search-results-decoration{
 }
 .location p:nth-child(1){
     font-size: 50px;
-    padding: 130px 0 15px 27px;
+    padding: 130px 0 25px 27px;
 }
 .location>p:nth-child(2){
     font-size: 16px;
