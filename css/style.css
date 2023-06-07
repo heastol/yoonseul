@@ -13,11 +13,6 @@ body::-webkit-scrollbar{
     width: 12px;
     height: 8px;
 }
-body::-webkit-scrollbar-track{
-    background-color: rgba(187, 217, 243, 1);
-    border-left: 5px white solid;
-    border-right: 5px white solid;
-}
 body::-webkit-scrollbar-thumb{
     background-color: rgba(187, 217, 243, 1);
     border-radius: 20px;
@@ -54,7 +49,7 @@ body::-webkit-scrollbar-thumb{
     top: 0;
     left: 0;
 }
-.header_scrolled{background-color: rgba(255, 255, 255, 1)}
+.header_scrolled{background-color: rgba(255, 255, 255, 1);}
 .top{
     margin: 0 auto;
     width: 1280px;
@@ -75,6 +70,8 @@ body::-webkit-scrollbar-thumb{
 .gnb>li>a{
     display: block;
     padding: 0 19px 36px 19px;
+    color: black;
+    font-size: 20px;
 }
 .sub_wrap{
     position: fixed;
@@ -129,12 +126,18 @@ body::-webkit-scrollbar-thumb{
     left: 50%;
     margin-left: -70px;
 }
+.left_btn:hover{
+    cursor: pointer;
+}
 .right_btn{
     width: 50px;
     position: absolute;
     top: 814px;
     left: 50%;
     margin-left: 20px;
+}
+.right_btn:hover{
+    cursor: pointer;
 }
 .product>p{
     font-size: 22px;
@@ -333,12 +336,18 @@ body::-webkit-scrollbar-thumb{
 .left_btn2 img{
     width: 25px;
 }
+.left_btn2:hover{
+    cursor: pointer;
+}
 .right_btn2{
     display: inline-block;
     margin:  0 50px 0;
 }
 .right_btn2 img{
     width: 25px;
+}
+.right_btn2:hover{
+    cursor: pointer;
 }
 .news>div{
     padding-bottom: 50px;

@@ -1,0 +1,350 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0;}
+ol, ul{list-style: none;}
+a{color: black; text-decoration: none;}
+body{
+    min-width: 1400px;
+    font-size: 14px;
+    color: black;
+    line-height: 24px;
+    font-family: 'Noto Sans KR';
+}
+body::-webkit-scrollbar{
+    width: 12px;
+    height: 8px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: rgba(187, 217, 243, 1);
+    border-radius: 20px;
+}
+/* header_wrap */
+#header_wrap{
+    position: relative;
+    height: 672px;
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden;
+}
+#header_wrap>img{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -960px;
+}
+#header_wrap>p{
+    position: absolute;
+    font-size: 50px;
+    line-height: 60px;
+    color: #48A8E5;
+    top: 304px;
+    left: 50%;
+    margin-left: -107px;
+}
+.header{
+    width: 100%;
+    height: 104px;
+    background-color: rgba(255, 255, 255, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8;
+}
+.header_scrolled{background-color: rgba(255, 255, 255, 1);}
+.top{
+    margin: 0 auto;
+    width: 1280px;
+    height: 104px;
+}
+.top>h1{
+    float: left;
+    padding-top: 22px;
+}
+.gnb{
+    float: right;
+    padding: 44px 5px 0 0;
+}
+.gnb>li{
+    float: left;
+    font-family: '제주명조';
+}
+.gnb>li>a{
+    display: block;
+    padding: 0 19px 36px 19px;
+    color: black;
+    font-size: 20px;
+}
+.sub_wrap{
+    position: fixed;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    height: 68px;
+    z-index: 9;
+    text-align: center;
+    background-color: rgba(210, 238, 254, 0.5);
+}
+.sub{
+    width: 1280px;
+    margin: 0 auto;
+}
+.sub_inner ul{
+    display: inline-block;
+}
+.sub_inner ul li{
+    float: left;
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+.sub_inner ul li a{
+    display: block;
+    margin: 0 50px;
+}
+.sub_scrolled{
+    background-color: rgba(210, 238, 254, 1);
+}
+/* news */
+#news{
+    height: 2080px;
+    width: 1280px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+#news>p{
+    text-align: left;
+    padding: 130px 0 100px;
+    font-size: 40px;
+}
+.news_inner{
+    height: 369px;
+    text-align: left;
+}
+.news_inner a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.news_inner img{
+    width: 403px;
+    height: 269px;
+}
+.news_inner div{
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 50px;
+}
+.news_inner div:nth-child(1){
+    margin-right: 60px;
+}
+.news_inner div:nth-child(2) p:nth-child(1){
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.news_inner div:nth-child(2) p:nth-child(2){
+    font-size: 16px;
+    font-weight: 100;
+    padding-bottom: 40px;
+}
+.news_inner div:nth-child(2) p:nth-child(3){
+    font-size: 10px;
+}
+.intro{
+    width: 326px;
+    height: 92px;
+    border-radius: 46px;
+    background-color: black;
+    position: absolute;
+    top: -46px;
+    left: 50%;
+    margin-left: -163px;
+    z-index: 7;
+    text-align: center;
+}
+.intro p{
+    color: white;
+    padding-top: 32px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.view_more{
+    margin-top: 70px;
+    display: inline-block;
+    width: 200px;
+    height: 70px;
+    border-radius: 35px;
+    background-color: #D2EDFE;
+}
+.view_more a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 35px;
+}
+.view_more p{
+    padding-top: 21px;
+    color: #868686;
+}
+/* event */
+#event{
+    height: 1652px;
+    width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+}
+#event>p{
+    text-align: left;
+    font-size: 40px;
+    padding-bottom: 70px;
+}
+.board{
+    width: 1190px;
+    height: 1116px;
+    margin: 0 auto;
+    position: relative;
+    text-align: left;
+}
+.board>li{
+    float: left;
+    width: 50%;
+    background-color: #48A8E5;
+}
+.board>li>a{
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+}
+.board>li.on>a{
+    background-color: #74C9FF;
+}
+.board li div{
+    height: 0;
+    overflow: hidden;
+}
+.board li.on >div{
+    position: absolute;
+    top: 92px;
+    left: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 984px;
+}
+.board1_inner li{
+    width: 550px;
+    height: 459px;
+    float: left;
+    margin-right: 55px;
+    margin-bottom: 50px;
+    border: 1px black solid;
+}
+.board1_inner li a{
+    display: block;
+    width: 550px;
+    height: 459px;
+}
+.board1_inner li div{
+    width: 550px;
+    height: 311px;
+}
+.board1_inner li:nth-child(2n){
+    margin-right: 0;
+}
+.board1_inner li div img{
+    width: 550px;
+    height: 311px;
+}
+.board1_inner li p:nth-child(2){
+    font-size: 25px;
+    padding: 30px 0 30px 30px;
+    font-weight: 100;
+}
+.board1_inner li p:nth-child(3){
+    font-size: 16px;
+    font-weight: 100;
+    padding: 0 0 0 30px;
+}
+.board2_inner li{
+    width: 550px;
+    height: 459px;
+    float: left;
+    margin-right: 55px;
+    margin-bottom: 50px;
+    border: 1px black solid;
+}
+.board2_inner li a{
+    display: block;
+    width: 550px;
+    height: 459px;
+}
+.board2_inner li div{
+    background-color: black;
+    width: 550px;
+    height: 311px;
+    position: relative;
+}
+.board2_inner li div p{
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: -80px;
+    color: white;
+    padding: 0;
+    opacity: 0;
+    transform: translateZ(0);
+    transition-property: transform opacity;
+    transition-duration: 0.5s;
+}
+.board2_inner li div:hover p{
+    opacity: 1;
+    transform: translateY(20px);
+    transition: transform 0.5s;
+}
+.board2_inner li:nth-child(2n){
+    margin-right: 0;
+}
+.board2_inner li div img{
+    width: 550px;
+    height: 311px;
+    opacity: 0.3;
+}
+.board2_inner li p:nth-child(2){
+    font-size: 25px;
+    padding: 30px 0 30px 30px;
+    font-weight: 100;
+}
+.board2_inner li p:nth-child(3){
+    font-size: 16px;
+    font-weight: 100;
+    padding: 0 0 0 30px;
+}
+/* footer_wrap */
+#footer_wrap{
+    height: 200px;
+    background-color: #74C9FF;
+}
+.footer{
+    width: 1280px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 50px 0 0;
+}
+.footer p{
+    font-size: 12px;
+    color: white;
+    float: left;
+    line-height: 16px;
+    margin-right: 20px;
+}
+.footer span{
+    font-size: 10px;
+}
+.footer ul{
+    float: right;
+}
+.footer ul li{
+    float: left;
+}
+.footer ul li a{
+    display: block;
+    color: white;
+    padding: 0 5px;
+}

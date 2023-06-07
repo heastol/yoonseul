@@ -1,0 +1,437 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0;}
+ol, ul{list-style: none;}
+a{color: black; text-decoration: none;}
+body{
+    min-width: 1400px;
+    font-size: 14px;
+    color: black;
+    line-height: 24px;
+    font-family: 'Noto Sans KR';
+}
+body::-webkit-scrollbar{
+    width: 12px;
+    height: 8px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: rgba(187, 217, 243, 1);
+    border-radius: 20px;
+}
+/* header_wrap */
+#header_wrap{
+    position: relative;
+    height: 672px;
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden;
+}
+#header_wrap>img{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -960px;
+}
+#header_wrap>p{
+    position: absolute;
+    font-size: 50px;
+    line-height: 60px;
+    color: white;
+    top: 304px;
+    left: 50%;
+    margin-left: -107px;
+}
+.header{
+    width: 100%;
+    height: 104px;
+    background-color: rgba(255, 255, 255, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8;
+}
+.header_scrolled{background-color: rgba(255, 255, 255, 1);}
+.top{
+    margin: 0 auto;
+    width: 1280px;
+    height: 104px;
+}
+.top>h1{
+    float: left;
+    padding-top: 22px;
+}
+.gnb{
+    float: right;
+    padding: 44px 5px 0 0;
+}
+.gnb>li{
+    float: left;
+    font-family: '제주명조';
+}
+.gnb>li>a{
+    display: block;
+    padding: 0 19px 36px 19px;
+    color: black;
+    font-size: 20px;
+}
+.sub_wrap{
+    position: fixed;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    height: 68px;
+    z-index: 9;
+    text-align: center;
+    background-color: rgba(210, 238, 254, 0.5);
+}
+.sub{
+    width: 1280px;
+    margin: 0 auto;
+}
+.sub_inner ul{
+    display: inline-block;
+}
+.sub_inner ul li{
+    float: left;
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+.sub_inner ul li a{
+    display: block;
+    margin: 0 50px;
+}
+.sub_scrolled{
+    background-color: rgba(210, 238, 254, 1);
+}
+/* notice_wrap */
+#notice_wrap{
+    height: 1010px;
+    position: relative;
+}
+.notice{
+    width: 1280px;
+    height: 1010px;
+    margin: 0 auto;
+}
+.intro{
+    width: 326px;
+    height: 92px;
+    border-radius: 46px;
+    background-color: black;
+    position: absolute;
+    top: -46px;
+    left: 50%;
+    margin-left: -163px;
+    z-index: 7;
+    text-align: center;
+}
+.intro p{
+    color: white;
+    padding-top: 32px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.notice_inner{
+    position: absolute;
+    top: 160px;
+    left: 50%;
+    margin-left: -640px;
+    width: 1280px;
+    height: 656px;
+    border: 1px #D8D8D8 solid;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+.notice_inner>p{
+    text-align: left;
+    font-size: 50px;
+    padding: 30px 0 30px 25px;
+}
+.notice_inner table{
+    text-align: center;
+    font-weight: 300;
+    border-top: 1px #76C2F2 solid;
+    border-collapse: collapse;
+    margin-top: 30px;
+    margin-left: 187px;
+}
+.notice_inner table tr{
+    height: 57px;
+    border-bottom: 1px #76C2F2 solid;
+}
+.notice_inner table tr td a{
+    display: inline-block;
+}
+.notice_inner table tr td a:hover{
+    color: #74C9FF;
+}
+.notice_inner table tr td:nth-child(2){
+    text-align: left;
+}
+.notice_inner .left, .notice_inner .number, .notice_inner .right{
+    margin-top: 40px;
+    width: 34px;
+    height: 34px;
+    border: 1px black solid;
+    display: inline-block;
+}
+.notice_inner .left a, .notice_inner .number a, .notice_inner .right a{
+    width: 100%;
+}
+.notice_inner .left p, .notice_inner .number p, .notice_inner .right p{
+    padding-top: 4px;
+    padding-bottom: 6px;
+}
+/* contact */
+#contact{
+    height: 1000px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+#contact img{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -960px;
+    z-index: -1;
+}
+#contact .contact_back{
+    width: 1920px;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -960px;
+    background-color: #56659E;
+    z-index: -1;
+    opacity: 0.6;
+}
+.contact_inner{
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+}
+.contact_inner>p{
+    text-align: left;
+}
+#contact p:nth-child(1){
+    font-size: 50px;
+    padding: 60px 0 20px 22px;
+    color: black;
+}
+#contact p:nth-child(2){
+    font-size: 16px;
+    padding: 0 0 50px 22px;
+    color: black;
+}
+input::-ms-clear,
+input::-ms-reveal{
+    display:none;
+}
+/* 크롬의 경우 */
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration{
+    display:none;
+}
+.message{
+    width: 1280px;
+    height: 546px;
+    background-color: rgba(17, 33, 55, 0.8);
+    box-sizing: border-box;
+    padding: 52px 0 0 34px;
+    text-align: right;
+}
+.message div{
+    display: inline-block;
+    text-align: left;
+}
+.message .name{
+    width: 584px;
+    height: 62px;
+    border: 1px #868686 solid;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 16px 0 0 18px;
+    margin: 0 36px 32px 0;
+}
+.message .name input{
+    width: 550px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+}
+.message .tel{
+    width: 586px;
+    height: 62px;
+    border: 1px #868686 solid;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 16px 0 0 18px;
+    margin: 0 36px 32px 0;
+}
+.message .tel input{
+    width: 552px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+}
+.message .e_mail{
+    width: 584px;
+    height: 62px;
+    border: 1px #868686 solid;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 16px 0 0 18px;
+    margin: 0 36px 32px 0;
+}
+.message .e_mail input{
+    width: 550px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+}
+.message .phone{
+    width: 586px;
+    height: 62px;
+    border: 1px #868686 solid;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 16px 0 0 18px;
+    margin: 0 36px 32px 0;
+}
+.message .phone input{
+    width: 552px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+}
+.message .text{
+    width: 1212px;
+    height: 173px;
+    border: 1px #868686 solid;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 16px 0 0 18px;
+    margin: 0 40px 32px 0;
+}
+.message .text textarea{
+    width: 100%;
+    height: 155px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+}
+.message .file{
+    width: 185px;
+    height: 57px;
+    background-color: white;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 15px;
+    margin-right: 34px;
+}
+.message .file a{
+    padding: 17.5px 66.5px 19.5px;
+}
+.submit{
+    width: 595px;
+    height: 79px;
+    display: inline-block;
+    text-align: center;
+    background-color: #102036;
+    box-sizing: border-box;
+    margin-top: 50px;
+    padding-top: 27px;
+}
+.submit a{
+    color: white;
+    font-size: 31px;
+    padding: 16px 240px 17px;
+}
+/* location_wrap */
+#location_wrap{
+    height: 963px;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+.location{
+    width: 1280px;
+    height: 463px;
+    margin: 0 auto;
+    text-align: left;
+}
+.location p:nth-child(1){
+    font-size: 50px;
+    padding: 130px 0 15px 27px;
+}
+.location>p:nth-child(2){
+    font-size: 16px;
+    padding: 0 0 60px 27px;
+}
+.location div{
+    display: inline-block;
+}
+.location div img{
+    width: 46px;
+    height: 46px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 17px;
+}
+.location div p{
+    font-size: 26px;
+    line-height: 26px;
+    display: inline-block;
+    line-height: 37px;
+    vertical-align: middle;
+}
+.address{
+    padding: 0 150px 0 22px;
+}
+.location_back{
+    position: absolute;
+    top: 463px;
+    left: 50%;
+    margin-left: -960px;
+    width: 1920px;
+    height: 500px;
+    background-color: black;
+    opacity: 0.3;
+}
+/* footer_wrap */
+#footer_wrap{
+    height: 200px;
+    background-color: #74C9FF;
+}
+.footer{
+    width: 1280px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 50px 0 0;
+}
+.footer p{
+    font-size: 12px;
+    color: white;
+    float: left;
+    line-height: 16px;
+    margin-right: 20px;
+}
+.footer span{
+    font-size: 10px;
+}
+.footer ul{
+    float: right;
+}
+.footer ul li{
+    float: left;
+}
+.footer ul li a{
+    display: block;
+    color: white;
+    padding: 0 5px;
+}
