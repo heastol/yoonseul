@@ -249,7 +249,7 @@ input::-webkit-search-results-decoration{
     text-align: left;
 }
 .message .name{
-    width: 584px;
+    width: 580px;
     height: 62px;
     border: 1px #868686 solid;
     background-color: white;
@@ -264,7 +264,7 @@ input::-webkit-search-results-decoration{
     outline: none;
 }
 .message .tel{
-    width: 586px;
+    width: 580px;
     height: 62px;
     border: 1px #868686 solid;
     background-color: white;
@@ -279,7 +279,7 @@ input::-webkit-search-results-decoration{
     outline: none;
 }
 .message .e_mail{
-    width: 584px;
+    width: 580px;
     height: 62px;
     border: 1px #868686 solid;
     background-color: white;
