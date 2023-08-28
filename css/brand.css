@@ -212,11 +212,11 @@ body::-webkit-scrollbar-thumb{
     padding-right: 350px;
 }
 .vision div:nth-child(3){
-    width: 629px;
+    width: 600px;
     height: 437px;
 }
 .vision div:nth-child(3) img{
-    width: 629px;
+    width: 600px;
     height: 437px;
 }
 /* banner_wrap */
@@ -285,7 +285,7 @@ body::-webkit-scrollbar-thumb{
 }
 .promise div:nth-child(2){
     margin-left: 95px;
-    padding-right: 220px;
+    padding-right: 193px;
 }
 .promise div:nth-child(3) p:nth-child(1){
     font-size: 50px;
