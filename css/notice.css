@@ -294,7 +294,7 @@ input::-webkit-search-results-decoration{
     outline: none;
 }
 .message .phone{
-    width: 586px;
+    width: 580px;
     height: 62px;
     border: 1px #868686 solid;
     background-color: white;
@@ -309,7 +309,7 @@ input::-webkit-search-results-decoration{
     outline: none;
 }
 .message .text{
-    width: 1212px;
+    width: 1200px;
     height: 173px;
     border: 1px #868686 solid;
     background-color: white;
@@ -334,7 +334,7 @@ input::-webkit-search-results-decoration{
     margin-right: 34px;
 }
 .message .file a{
-    padding: 17.5px 66.5px 19.5px;
+    padding: 17.5px 64.5px 19.5px;
 }
 .submit{
     width: 595px;
@@ -349,7 +349,7 @@ input::-webkit-search-results-decoration{
 .submit a{
     color: white;
     font-size: 31px;
-    padding: 16px 240px 17px;
+    padding: 16px 235px 17px;
 }
 /* location_wrap */
 #location_wrap{
@@ -391,7 +391,7 @@ input::-webkit-search-results-decoration{
     vertical-align: middle;
 }
 .address{
-    padding: 0 150px 0 22px;
+    padding: 0 143px 0 22px;
 }
 .location_back{
     position: absolute;

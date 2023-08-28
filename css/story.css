@@ -134,7 +134,7 @@ body::-webkit-scrollbar-thumb{
     margin-top: 50px;
 }
 .news_inner div:nth-child(1){
-    margin-right: 60px;
+    margin-right: 15px;
 }
 .news_inner div:nth-child(2) p:nth-child(1){
     font-size: 20px;
